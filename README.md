@@ -8,4 +8,38 @@ The dataset is included in this repository and will be analyzed using **Python l
 
 ### Dataset Overview
 
-<img width="1499" height="790" alt="image" src="https://github.com/user-attachments/assets/6ab56dab-4d3b-4253-9460-9cbd236d5c9a" />
+```python
+import pandas as pd
+
+df = pd.read_csv('netflix_titles.csv')
+```
+
+```python
+df.head()
+```
+
+<img width="1387" height="450" alt="image" src="https://github.com/user-attachments/assets/d67f6da0-b174-42a6-a4a8-e66daff97336" />
+
+```python
+df.tail()
+```
+
+<img width="1386" height="453" alt="image" src="https://github.com/user-attachments/assets/30f331e2-40fb-436a-a065-96c382ec12c9" />
+
+```python
+df.shape #(rows, columns)
+```
+
+<img width="109" height="39" alt="image" src="https://github.com/user-attachments/assets/b1290b47-f4a9-4a41-90da-6822e281101b" />
+
+```python
+df.columns
+```
+
+<img width="1045" height="94" alt="image" src="https://github.com/user-attachments/assets/22886fc6-d8ab-4d07-abce-8d9adce1aad0" />
+
+```python
+df.info()
+```
+
+<img width="490" height="414" alt="image" src="https://github.com/user-attachments/assets/b9970106-fdeb-4989-a86a-aa823cb6b2f4" />
