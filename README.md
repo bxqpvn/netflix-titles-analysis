@@ -84,3 +84,6 @@ df['date_added'] = pd.to_datetime(df['date_added'], errors='coerce')
 <img width="478" height="454" alt="image" src="https://github.com/user-attachments/assets/8c0fe275-60b8-4b7a-9ea4-ba99f8252687" />
 
 <img width="1364" height="258" alt="image" src="https://github.com/user-attachments/assets/67abb08e-18e3-41cb-888c-fe512fd5c0ce" />
+
+>[!NOTE]
+> In this dataset, converting `date_added` without `errors='coerce'` may cause an error due to invalid or missing date values.
