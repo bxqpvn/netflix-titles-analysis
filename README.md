@@ -57,3 +57,30 @@ df.info()
 ```
 
 <img width="490" height="414" alt="image" src="https://github.com/user-attachments/assets/b9970106-fdeb-4989-a86a-aa823cb6b2f4" />
+
+
+### Data Cleaning
+
+*As part of the data cleaning process, the dataset is checked for missing values, duplicates, and data type issues.*
+
+1. Missing values
+
+```python
+df.isnull().sum()
+```
+
+<img width="258" height="285" alt="image" src="https://github.com/user-attachments/assets/cb32faae-47af-4399-8c95-53c1329393dc" />
+
+2. Duplicate check
+
+<img width="459" height="80" alt="image" src="https://github.com/user-attachments/assets/44291bf3-4309-4b30-972d-77d46eb37979" />
+
+3. Convert date_added to `datetime`
+
+```python
+df['date_added'] = pd.to_datetime(df['date_added'], errors='coerce')
+```
+
+<img width="478" height="454" alt="image" src="https://github.com/user-attachments/assets/8c0fe275-60b8-4b7a-9ea4-ba99f8252687" />
+
+<img width="1364" height="258" alt="image" src="https://github.com/user-attachments/assets/67abb08e-18e3-41cb-888c-fe512fd5c0ce" />
