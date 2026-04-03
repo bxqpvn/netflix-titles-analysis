@@ -4,7 +4,7 @@
 
 *This project explores a Netflix CSV dataset using Python. The analysis will focus on movies, TV shows, genres, ratings, release years, and other key content trends.*
 
-The dataset is included in this repository and will be analyzed using **Python libraries** such as **Pandas** and **Matplotlib**.
+The dataset is included in this repository and will be analyzed using **Python libraries** such as **Pandas**, **Matplotlib** and **Seaborn**.
 
 ### Dataset Overview
 
@@ -91,3 +91,12 @@ df['date_added'] = pd.to_datetime(df['date_added'], errors='coerce')
 4. Extract year and month
 
 <img width="1392" height="680" alt="image" src="https://github.com/user-attachments/assets/3249274a-c29a-44f2-a354-de75eb54387d" />
+
+### Exploratory Data Analysis
+
+*This section explores the Netflix dataset through visualizations using **Matplotlib** and **Seaborn**.*
+
+```python
+import matplotlib.pyplot as plt
+import seaborn as sns
+```
