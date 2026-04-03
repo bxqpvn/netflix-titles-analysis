@@ -59,7 +59,7 @@ df.info()
 <img width="490" height="414" alt="image" src="https://github.com/user-attachments/assets/b9970106-fdeb-4989-a86a-aa823cb6b2f4" />
 
 
-### Data Cleaning
+### Data Preparation
 
 *As part of the data cleaning process, the dataset is checked for missing values, duplicates, and data type issues.*
 
@@ -81,9 +81,13 @@ df.isnull().sum()
 df['date_added'] = pd.to_datetime(df['date_added'], errors='coerce')
 ```
 
-<img width="478" height="454" alt="image" src="https://github.com/user-attachments/assets/8c0fe275-60b8-4b7a-9ea4-ba99f8252687" />
+<img width="478" height="454" alt="image" src="https://github.com/user-attachments/assets/8c0fe275-60b8-4b7a-9ea4-ba99f8252687" />  
 
 <img width="1364" height="258" alt="image" src="https://github.com/user-attachments/assets/67abb08e-18e3-41cb-888c-fe512fd5c0ce" />
 
 >[!NOTE]
 > In this dataset, converting `date_added` without `errors='coerce'` may cause an error due to invalid or missing date values.
+
+4. Extract year and month
+
+<img width="1392" height="680" alt="image" src="https://github.com/user-attachments/assets/3249274a-c29a-44f2-a354-de75eb54387d" />
