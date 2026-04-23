@@ -100,3 +100,8 @@ df['date_added'] = pd.to_datetime(df['date_added'], errors='coerce')
 import matplotlib.pyplot as plt
 import seaborn as sns
 ```
+
+1. Content Type Distribution
+ 
+<img width="1216" height="759" alt="image" src="https://github.com/user-attachments/assets/8baa39be-308b-43d3-91b1-3ac49fde52c1" />
+
